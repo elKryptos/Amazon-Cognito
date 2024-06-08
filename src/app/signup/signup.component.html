@@ -1,1 +1,9 @@
-git <p>signup works!</p>
+<p>signup works!</p>
+
+<p>Username: <input type="text" #username></p>
+<p>Password: <input type="text" #password></p>
+<p>Mail: <input type="text" #email></p>
+<p>Name: <input type="text" #name></p>
+<p>Surname: <input type="text" #surname></p>
+
+<p><button (click)="singup(username.value, password.value, email.value, name.value, surname.value)">Confirm</button></p>

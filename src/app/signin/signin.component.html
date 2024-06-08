@@ -1,1 +1,4 @@
 <p>signin works!</p>
+<p>Username<input type="text" #username></p>
+<p>Password<input type="password" #password></p>
+<p><button (click)="signin(username.value, password.value)">Singin</button></p>

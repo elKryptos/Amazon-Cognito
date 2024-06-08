@@ -1,6 +1,6 @@
 export const environment = {
     congnito: {
-        UserPoolId: "eu-west-3_UzPXndP9I",
-        ClientId: "3qn0pu3i5hg2pmmna10lr9tlep"
+        UserPoolId: "eu-west-3_IyJibn5pl",
+        ClientId: "2vms1fpmbnk9qk4hjatlad1rss"
     }
 }

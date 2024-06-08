@@ -1,1 +1,6 @@
 <p>confirm works!</p>
+
+<p>Username<input type="text" #username></p>
+<p>Verification Code (check email)<input type="text" #code></p>
+
+<p><button (click)="confirm(username.value, code.value)">Confirm</button></p>

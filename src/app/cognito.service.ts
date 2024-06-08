@@ -53,18 +53,17 @@ export class CognitoService {
     })
   }
 
-  confirm(username: string, code: string){
+  userConfirm(username: string, code: string): Promise<string> {
     let user = new CognitoUser({
       Pool: this.cognitoPool,
       Username: username
     })
 
     return new Promise((resolve, reject)=>{
-      user.confirmRegistration(code, false, (err, res) => {
+      user.confirmRegistration(code, false, (err, result) => {
         if(err) reject(err.message)
         else resolve("OK")
       })
     })
   }
-
 }
